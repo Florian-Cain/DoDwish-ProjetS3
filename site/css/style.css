@@ -1,0 +1,255 @@
+textarea:hover, 
+textarea:active, 
+textarea:focus, 
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active,
+.form-control:focus
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+/*nav-bar*/
+.search-btn{
+	background-color: rgba(237,90,107,1);
+	border: none;
+	padding: 10px 20px;
+	border-radius:0 7px 7px 0;
+}
+.search-btn:hover{
+	background-color: rgba(237,90,107,0.7);
+	transition: 0.3s;
+}
+.pin{
+	margin-left: 10px;
+}
+.search-elmt-2{
+	border-radius:0;
+	border: none;
+}
+.search-elmt-1{
+	border-radius:7px 0 0 7px;
+	border: none;	
+	font-weight: 500;
+}
+.search-sep{
+	width: 1px;
+	height: 20px;
+	background-color: rgb(221,221,221);
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.search{
+	border: 1px solid;
+	border-radius: 7px;
+	border-color: rgba(221,221,221,1);
+	box-shadow: 0 0 20px #C8C8C8;
+}
+.nav-center{
+	padding-top: 15px;
+}
+.nav-line{
+	height: 1px;
+	background-color: rgb(221,221,221);
+	
+}
+
+.btn-red{
+	background-color: rgba(237,90,107,1);
+	border: none;
+	padding: 5px 5px;
+	border-radius:7px;
+	color: white;
+}
+.btn-wht{
+	background-color: white;
+	border: none;
+	padding: 5px 5px;
+	border-radius:7px;
+	border: 1px solid #D7D7D7;
+	color: #3F3F3F;
+	box-shadow: 0 0 20px #C8C8C8;
+}
+.btn-logout{
+	background-color: white;
+	border: none;
+	padding: 5px 5px;
+	width: 150px;
+	border-radius:7px;
+	border: 1px solid #D7D7D7;
+	color: #3F3F3F;
+}
+.img-home{
+	border-radius: 7px;
+}
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.carte{
+	background-color: #F4F4F4;
+}
+.box{color:black;}
+.box:hover{
+	text-decoration: none;
+	color:black;
+}
+.carte-elmt{
+	background-color: white;
+	box-shadow: 0 0 20px #C8C8C8;
+	border-radius: 7px;
+
+}
+.img-carte{
+	border-radius: 7px 0 0 7px;
+}
+.carte-line{
+	height: 1px;
+	background-color: #BDBDBD;
+}
+.carte-desc{
+	font-size: 12px;
+	color:#444444;
+}
+
+.background-light{
+	background-color: #EDEDED;
+}
+
+.input-shadow{
+	box-shadow: 0 0 20px rgba(0,0,0,0.25);
+	border-width: 0;
+}
+
+.card-delivery{
+	background-color: #2196F3;
+}
+
+a{
+	color: #ED5A6B;
+}
+a:hover{
+	color : #ED5A6B;
+}
+.menu-open{
+	background-color: #ED5A6B;
+	position:fixed;
+	z-index: 1000000000;
+	right:0;
+	top:0;
+	z-index: 100000;
+	height: 100%;
+	transition: 1s;
+}
+.menu-close{
+	background-color: #ED5A6B;
+	position:fixed;
+	z-index: 1000000000;
+	right:-300px;
+	top:0;
+	z-index: 100000;
+	height: 100%;
+	transition: 1s;
+}
+.menu-lst{
+	margin-right: 30px;
+}
+.menu-lst a{
+	color:white;
+	text-decoration: none;
+	list-style: none;
+	text-align: right;
+	line-height: 70px;
+}
+.menu-btn{
+	background: none;
+	border:none;
+}
+.menu-lst a:hover{
+	color:white;
+	text-decoration: none;
+	list-style: none;
+	text-align: right;
+	line-height: 70px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+                    .nav-center {
+                        display: none;
+                    }
+                }
+
+
+
+.mn-line-height{
+	line-height: 1;
+}

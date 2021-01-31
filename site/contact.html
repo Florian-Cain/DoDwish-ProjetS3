@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Do-Dwish | Contact</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-light bg-light">
+                <div class="nav-left">
+                    <a class="navbar-brand text-light navFirst" href="index.php">
+                        <img src="img/logo.png" height="30px">
+                    </a>
+                </div>
+                <div class="nav-center">
+                    <form class="form-inline search">
+                        <div class="pin"><img src="icon/pin.svg" height="20px"></div>
+                        <label for="cars"></label>
+                        <select class="form-control selectpicker search-elmt-1" name="adresse">
+                                        <option value="test1">Test 1</option>
+                                        <option value="test2">Test 2</option>
+                                        <option value="test2">Ajouter une Adresse</option>
+                                    </select>
+                        <div class="search-sep"></div>
+                        <input class="form-control search-elmt-2" type="search" placeholder="Chercher un produit" aria-label="Chercher un produit">
+                        <button class="search-btn" type="submit">
+                            <img src="icon/loupe.svg" height="20px">
+                        </button>
+                    </form>
+                </div>
+                <div class="row">
+                    <div>
+                        <a class="nav-link text-light" href="#">
+                            <img src="icon/bell.svg" height="30px">
+                        </a>
+                    </div>
+                    <div>
+                        <button id="open-menu" class="menu-btn mt-2 mx-4" type="button">
+                                  <img src="icon/menu.svg" height="30px">
+                        </button>
+                    </div>
+
+                </div>
+                <div class="nav-line container-fluid mt-3"></div>
+        </nav>
+
+            <div id="menu" class="menu-close bg-dark"> 
+                <div class="row mt-5 justify-content-between">
+                    <div class="col-2 ml-3">
+                        <button id="close-menu" class="menu-btn" type="button">
+                            <img src="icon/menu-white.svg" height="30px">
+                        </button>
+                    </div>
+                    <div class="col-8">
+                        <div class="mt-1 pr-5 align-right">
+                            <img src="img/logo_white.png"  height="30px">
+                        </div>
+                    </div>
+                </div>
+                
+                <ul class="menu-lst mt-5">
+                    <a href="carte.html"><li>NOTRE CARTE</li></a>
+                    <a href="commande.html"><li>COMMANDER</li></a>
+                    <a href="compte.php"><li>MON COMPTE</li></a>
+                    <a href="panier.html"><li>PANIER</li></a>
+                    <a href="contact.html"><li>CONTACT</li></a>
+                    <a href="horaire.html"><li>HORAIRES</li></a>
+                </ul>
+            </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 align-self-center">
+                    <h2 class="text-center">Où sommes nous ?</h2>
+                    <p class="text-center mb-5">1 Rue de l'imaginaire - 51100 Reims</p>
+                    <p class="text-center">Téléphone : 03 24 56 78 90</p>
+                    <p class="text-center mb-4">Email : do-dwish.official@gmail.com</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8 p-0">
+                    <img class="img-fluid w-100 h-100 p-0" src="img/burger_01.jpg">
+                </div>
+
+            </div>
+        </div>   
+
+        <div class="container mt-5 mn-line-height">
+            <footer class="row justify-content-center pt-4">
+                    <div class="col-6 col-md-3">
+                        <h6 class="font-weight-bold mb-3">INFORMATIONS</h6>
+                        <p>Notre restaurant</p>
+                        <p>Nous rejoindre</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h6 class="font-weight-bold mb-3">CONTACT</h6>
+                        <img src="icon/twitter.svg" height="40px">
+                        <img src="icon/facebook.svg" height="40px">
+                        <img src="icon/instagram.svg" height="40px">
+                    </div>
+                    <div class="col-6 col-md-3 mt-5 mt-md-0">
+                        <h6 class="font-weight-bold mb-3">NOS SERVICES</h6>
+                        <p>Se faire livrer</p>
+                        <p>Informations allergènes</p>
+                    </div>
+                    <div class="col-6 col-md-3 mt-5 mt-md-0">
+                        <h6 class="font-weight-bold mb-3">ELEMENTS LEGAUX</h6>
+                        <p>Mentions légales</p>
+                        <p>Conditions d'utilisation</p>
+                    </div>
+
+            </footer>
+            <p class="text-center mt-4">Pour votre santé, évitez de manger trop gras, trop sucré, trop salé.</p>
+            <p class="text-center">www.mangerbouger.fr</p>
+            <p class="text-center">Do-Dwich® n’est pas une marque déposée.</p>
+            <p class="text-center">© 2020 Do-Dwich.</p>
+            <p class="text-center">Tous droits réservés. Photos non contractuelles.</p>
+            <p class="text-center">Paramètres des témoins</p>
+        </div>
+
+
+
+        <script type="text/javascript">
+
+            var status = 0;
+
+            document.getElementById('open-menu').addEventListener('click', menuChange);
+            document.getElementById('close-menu').addEventListener('click', menuChange);
+
+
+            function menuChange(){
+                console.log(status)
+                 if(status == 0){
+                    document.getElementById('menu').className = 'menu-open';
+                    status = 1
+                 }
+                 else{
+                    document.getElementById('menu').className = 'menu-close';
+                    status = 0;
+                 }
+            }
+        </script>  
+    </body>
+</html>
