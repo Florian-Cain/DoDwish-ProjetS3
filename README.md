@@ -14,6 +14,5 @@ Une vidéo de présentation est fournie avec le site afin de visualiser le trava
 
 Rendez-vous sur __index.php__, vous pouvez créer un compte afin de voir l'interface utilisateur.
 Vous pouvez également vous connecter avec les comptes suivants:
-	- identifiant: *admin* 		mot de passe: *admin*
-	- identifiant: *livreur* 	mot de passe: *livreur*
+	identifiant: *admin*, mot de passe: *admin*. Et identifiant: *livreur*,	mot de passe: *livreur*.
 Afin d'accéder à de nouvelles fonctionnalités.
